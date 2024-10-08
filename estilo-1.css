@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 .header {
     height: 150px;
     width: 100%;
@@ -9,8 +12,7 @@
     border-radius: 10px;
     background: pink;
     text-align: center;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
+    font-family:"Permanent Marker", cursive;
 
 .bysara {
     font-family: 'Times New Roman', Times, serif;
