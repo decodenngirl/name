@@ -1,7 +1,20 @@
 .header {
-    height: 50px;
+    height: 150px;
     width: 100%;
-    background-color: cornsilk;
+    
+}
+
+.titulo-clay {
+    border: solid rgb(209, 79, 209);
+    border-radius: 10px;
+    background: pink;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.bysara {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 .contenedor {
     height: 1000px;
@@ -42,9 +55,3 @@ body {
     
 }
 
-.titulo-clay {
-    border: solid rgb(209, 79, 209);
-    border-radius: 10px;
-    background: pink;
-    text-align: center;
-}
