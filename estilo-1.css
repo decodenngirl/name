@@ -1,4 +1,6 @@
-
+.header {
+    background-color: cornsilk;
+}
 .contenedor {
     height: 1000px;
     width: 50%;
