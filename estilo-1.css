@@ -43,7 +43,7 @@ body {
 }
 
 .titulo-clay {
-    border: solid plum;
+    border: solid rgb(209, 79, 209);
     border-radius: 10px;
     background: pink;
     text-align: center;
