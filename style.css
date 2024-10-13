@@ -1,0 +1,15 @@
+header {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    border: 2px solid pink;
+    border-radius: 10px;
+}
+.h1-clay {
+    border-radius: 5px;
+    background-color: pink;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    text-align: center;
+
+}
