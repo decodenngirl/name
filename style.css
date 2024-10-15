@@ -1,10 +1,15 @@
 header {
-    width: 100%;
+    width: auto;
     margin: auto;
     margin-bottom: 20px;
     background-color: aliceblue;
     border: 2px solid pink;
     border-radius: 10px;
+    /* agregué estos ultimos 3 propiedades (display, align-itmes, justyfy-content)y el menú se centró*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 .h1-clay {
     border-radius: 5px;
@@ -16,3 +21,37 @@ header {
 body {
     background-color: PeachPuff;
 }
+ul,ol,li {
+    list-style: none;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+nav li a {
+    background-color: darksalmon;
+    color:azure;
+    text-decoration: none;
+    border: 2px solid palevioletred;
+    border-radius: 5px;
+}
+nav li a:hover {
+    background-color:pink ;
+}
+nav>li {
+    float:left
+}
+nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 500px;
+}
+nav li:hover>ul{
+    display:block
+}
+nav li ul li {
+    position: relative;
+    top: 0;
+    left: 50px;
+}
+/*esta propiedad de display:inline-block, me permitió poner horizontalmente los items de las categorias*/
+li {display: inline-block;}
+
