@@ -1,5 +1,5 @@
 header {
-    width: auto;
+    width: 100%;
     margin: auto;
     margin-bottom: 20px;
     background-color: aliceblue;
@@ -42,7 +42,6 @@ nav>li {
 nav li ul{
     display: none;
     position: absolute;
-    min-width: 500px;
 }
 nav li:hover>ul{
     display:block
