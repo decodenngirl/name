@@ -8,7 +8,6 @@ body {
 
 .carousel-container {
     position: relative;
-    max-width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -17,6 +16,8 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 300%;
+    align-items: center;
+    justify-content: center;
 }
 
 .slide {
@@ -52,9 +53,4 @@ img {
 .carousel{
     background-color: blue;
 
-}
-img{
-    position: relative;
-    top: 0;
-    left: 50%;
 }
