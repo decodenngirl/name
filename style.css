@@ -53,4 +53,48 @@ nav li ul li {
 }
 /*esta propiedad de display:inline-block, me permitió poner horizontalmente los items de las categorias*/
 li {display: inline-block;}
+/*cuando a img le pongo position absolute, las imagenes del footer se mueven hasta arriba*/
+img{max-width:400px;
+height:auto ;
+position: relative;
+top: 0;
+left: 15%;
+}
 
+.section-principal{
+    position: relative;
+    width:100%;
+    margin-top: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.article-principal{
+    margin-top: 50px;
+    width: 100%;
+    border: 2px solid black;
+}
+/*figure {display: flex;
+align-items: center;
+justify-content: center;}*/
+footer{
+    width:100%;
+    display: flex;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+}
+footer img{
+    width: 20px;
+    height: auto;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+}
+/*soy la mera verga ya le voy entendiendo a esto esto me permitió centrar el enlace y el figurecaption dentro de figure*/ 
+figure figcaption,a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+figure a {
+    text-decoration: none;
+}
