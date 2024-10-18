@@ -54,7 +54,7 @@ nav li ul li {
 /*esta propiedad de display:inline-block, me permitió poner horizontalmente los items de las categorias*/
 li {display: inline-block;}
 /*cuando a img le pongo position absolute, las imagenes del footer se mueven hasta arriba*/
-img{max-width:400px;
+img{width:80% ;
 height:auto ;
 position: relative;
 top: 0;
