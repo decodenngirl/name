@@ -1,22 +1,43 @@
-header {
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Puddles&display=swap');
+.header {
+    position: relative;
     width: 100%;
     margin: auto;
     margin-bottom: 20px;
-    background-color: aliceblue;
-    border: 2px solid pink;
+    /*background-image: url(https://i.imgur.com/WysWtxV.jpeg);*/
+    border: 2px solid rgb(25, 25, 25);
     border-radius: 10px;
     /* agregué estos ultimos 3 propiedades (display, align-itmes, justyfy-content)y el menú se centró*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    display:grid
 }
+.listas{
+border: 2px solid black;    
+position: absolute;
+top: 50%;
+left: 30%;
+}
+.nav-contenedor{position: relative;}
 .h1-clay {
+    height: 70px;
+    font-size: 4em;
+    margin-top: 15px;
+    margin-bottom: 0px;
     border-radius: 5px;
+    border:5px solid palevioletred;
+    color: black;
     background-color: pink;
-    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    font-family:"Rubik Puddles", system-ui;
     text-align: center;
 
+}
+.p-bysara{
+    text-align: center;
+    font-size: 1.5em;
+    font-family:"Playwrite GB S", cursive;
+    position: absolute;
+    top: -15%;
 }
 body {
     background-color: pink;
@@ -26,27 +47,27 @@ ul,ol,li {
     padding-top: 5px;
     padding-right: 5px;
 }
-nav li a {
+.listas li a {
     background-color: darksalmon;
     color:azure;
     text-decoration: none;
     border: 2px solid palevioletred;
     border-radius: 5px;
 }
-nav li a:hover {
+.listas li a:hover {
     background-color:pink ;
 }
-nav>li {
+.listas>li {
     float:left
 }
-nav li ul{
+.listas li ul{
     display: none;
     position: absolute;
 }
-nav li:hover>ul{
+.listas li:hover>ul{
     display:block
 }
-nav li ul li {
+.listas li ul li {
     position: relative;
     top: 0;
     left: 50px;
