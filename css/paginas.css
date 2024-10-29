@@ -1,0 +1,66 @@
+* Reseteo de márgenes y ajustes de caja */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+#div-contenedor {
+    border: 2px solid black;
+    height: 400px;
+    overflow: hidden;
+}
+
+/* Contenedor de cada elemento */
+.div-padre {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+/* Estilo de la primera sección */
+.div-1 {
+    background-color: rgba(251, 205, 238, 0.234);
+    height: 100%;
+}
+
+/* Estilo de la segunda sección */
+.div-2 {
+    /*background-color: rgb(10, 185, 179);*/
+    position: absolute;
+    top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Estilo de los puntos de navegación */
+.puntos {
+    display: inline-flex;
+    text-decoration: none;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de los puntos */
+.div_puntos {
+    position: relative;
+    width: 100%;
+    text-align: center; /* Centra los puntos horizontalmente */
+}
+
+/* Estilo de las imágenes */
+img {
+    width: 80%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
