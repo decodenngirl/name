@@ -1,90 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Puddles&display=swap');
-/* Estilo del encabezado */
+
+/* General: Adaptabilidad */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+}
+
+/* Header */
 .header {
-    background-color: #fd8efd;
+    background-color: #b76e79;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.h1-clay {
-    color: #f2e9e4;
-    margin: 0;
-    font-size: 20px;
-    font-family:"Rubik Puddles", system-ui;
-}
-
-.p-bysara {
-    color: #f2e9e4;
-    font-size: 14px;
-    margin: 0;
+/* Logo y Título */
+.header .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .nav-contenedor img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
 }
 
-/* Estilo del contenedor del menú */
-.listas {
+/* Menú principal deslizable */
+.menu-container {
+    overflow-x: auto;
+    white-space: nowrap;
     display: flex;
-    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #b76e79;
 }
 
-/* Menú principal */
+.menu-container::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento */
+}
+
 .nav {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
 }
 
 .nav > li {
-    position: relative;
-    margin: 0 20px;
+    display: inline-block;
 }
 
 .nav > li > a {
-    color: #f2e9e4;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     padding: 10px 15px;
-    display: block;
-    transition: background 0.3s;
+    display: inline-block;
+    transition: color 0.3s;
+    font-size: 16px;
 }
 
-/* Efecto de hover en el menú principal */
+/* Efecto de hover en los enlaces del menú */
 .nav > li > a:hover {
-    background-color: #fea5f0;
+    color: #f2f2f2;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
 }
 
-/* Estilo del submenú */
+/* Submenú */
 .nav > li ul {
     list-style: none;
     position: absolute;
     top: 100%;
     left: 0;
-    display: none; /* Ocultar el submenú por defecto */
-    background-color: #ffaff0;
+    display: none;
+    background-color: #22223b;
     padding: 10px 0;
     margin: 0;
     border-radius: 5px;
     min-width: 150px;
-    box-shadow: 0px 4px 8px rgba(223, 162, 216, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
-/* Mostrar el submenú al hacer hover en el elemento principal */
+/* Mostrar el submenú al pasar el cursor */
 .nav > li:hover ul {
     display: block;
 }
 
-/* Estilo de los enlaces del submenú */
+/* Estilo de enlaces del submenú */
 .nav > li ul li a {
     color: #f2e9e4;
     text-decoration: none;
@@ -98,44 +117,44 @@
     background-color: #c9ada7;
     border-radius: 5px;
 }
-/* Estilo responsive para pantallas de móvil */
-@media (max-width: 768px) {
-    /* Ajuste de la estructura del encabezado en dispositivos móviles */
-    .header {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    /* Cambiar la orientación del menú para dispositivos móviles */
-    .nav {
-        flex-direction: column;
-    }
-
-    .nav > li {
-        margin: 10px 0;
-    }
-
-    /* Aumentar el tamaño del texto en dispositivos móviles */
-    .nav > li > a {
-        font-size: 18px;
-        padding: 8px 0;
-    }
-
-    /* Ajuste de submenú en dispositivos móviles */
-    .nav > li ul {
-        position: relative;
-        top: auto;
-        left: auto;
-        min-width: 100%;
-    }
+/* Footer (inspirado en la navegación inferior de Shein) */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Ajuste del contenedor principal y el menú en pantallas muy pequeñas */
-@media (max-width: 480px) {
-    .h1-clay {
-        font-size: 18px;
+.footer-item {
+    text-align: center;
+    color: #b76e79;
+}
+
+.footer-item i {
+    font-size: 20px;
+}
+
+.footer-item p {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
     }
-    .p-bysara {
-        font-size: 12px;
+    .menu-container {
+        gap: 10px;
+    }
+    .nav > li > a {
+        font-size: 14px;
+        padding: 8px 10px;
     }
 }
