@@ -98,3 +98,44 @@
     background-color: #c9ada7;
     border-radius: 5px;
 }
+/* Estilo responsive para pantallas de móvil */
+@media (max-width: 768px) {
+    /* Ajuste de la estructura del encabezado en dispositivos móviles */
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Cambiar la orientación del menú para dispositivos móviles */
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav > li {
+        margin: 10px 0;
+    }
+
+    /* Aumentar el tamaño del texto en dispositivos móviles */
+    .nav > li > a {
+        font-size: 18px;
+        padding: 8px 0;
+    }
+
+    /* Ajuste de submenú en dispositivos móviles */
+    .nav > li ul {
+        position: relative;
+        top: auto;
+        left: auto;
+        min-width: 100%;
+    }
+}
+
+/* Ajuste del contenedor principal y el menú en pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .h1-clay {
+        font-size: 18px;
+    }
+    .p-bysara {
+        font-size: 12px;
+    }
+}
