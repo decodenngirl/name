@@ -18,26 +18,28 @@ body {
 /* Header */
 .header {
     background-color: #b76e79;
-    padding: 10px 20px;
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Logo y Título */
-.header .logo {
+/* Título y Slogan */
+.header .titulo {
     color: #fff;
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-.nav-contenedor img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+.header .slogan {
+    color: #f2e9e4;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
 /* Menú principal deslizable */
@@ -45,9 +47,11 @@ body {
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     padding: 10px 0;
     background-color: #b76e79;
+    width: 100%;
+    justify-content: center;
 }
 
 .menu-container::-webkit-scrollbar {
@@ -69,10 +73,10 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    padding: 10px 15px;
+    padding: 8px 10px;
     display: inline-block;
     transition: color 0.3s;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* Efecto de hover en los enlaces del menú */
@@ -107,7 +111,7 @@ body {
 .nav > li ul li a {
     color: #f2e9e4;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 8px 10px;
     display: block;
     transition: background 0.3s;
 }
@@ -148,13 +152,13 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     .header {
-        padding: 10px;
+        padding: 15px;
     }
     .menu-container {
-        gap: 10px;
+        gap: 5px;
     }
     .nav > li > a {
-        font-size: 14px;
-        padding: 8px 10px;
+        font-size: 12px;
+        padding: 6px 8px;
     }
 }
