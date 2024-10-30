@@ -1,53 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Puddles&display=swap');
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-/*cuando a img le pongo position absolute, las imagenes del footer se mueven hasta arriba*/
-img{width:80% ;
-height:auto ;
-position: relative;
-top: 0;
-left: 15%;
-}
-
-.section-principal{
-    position: relative;
-    width:100%;
-    margin-top: 10px;
+/* Estilo General */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f2f4; /* Fondo claro */
+    color: #333;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-.article-principal{
-    margin-top: 50px;
+
+/* Sección Principal */
+.section-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Artículos */
+.article-principal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Espaciado entre elementos */
+    max-width: 1200px; /* Ancho máximo */
+    margin: auto; /* Centrado */
+}
+
+/* Figuras */
+figure {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para evitar el desbordamiento */
+    transition: transform 0.3s; /* Efecto de hover */
+    position: relative; /* Para posicionar el enlace "comprar" */
+}
+
+figure:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Imagen */
+figure img {
     width: 100%;
-    border: 2px solid black;
+    height: auto; /* Mantiene la proporción */
+    border-bottom: 2px solid #f28e9d; /* Línea decorativa */
 }
-/*figure {display: flex;
-align-items: center;
-justify-content: center;}*/
-footer{
-    width:100%;
-    display: flex;
-    border: 2px solid black;
-    align-items: center;
-    justify-content: center;
+
+/* Figcaption */
+figcaption {
+    padding: 10px;
+    font-size: 14px; /* Tamaño de texto */
+    color: #555; /* Color de texto */
 }
-footer img{
-    width: 20px;
-    height: auto;
-    border: 1px solid whitesmoke;
-    border-radius: 3px;
-}
-/*soy la mera verga ya le voy entendiendo a esto esto me permitió centrar el enlace y el figurecaption dentro de figure*/ 
-figure figcaption,a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
+/* Enlace "comprar" */
 figure a {
+    display: block;
+    background-color: #f28e9d; /* Rosa claro */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
     text-decoration: none;
+    transition: background-color 0.3s; /* Transición para hover */
+    font-weight: bold;
+}
+
+figure a:hover {
+    background-color: #c9ada7; /* Color al pasar el ratón */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    margin: 0 10px; /* Espaciado entre íconos */
+}
+
+footer img {
+    width: 30px; /* Tamaño de los íconos */
+    vertical-align: middle; /* Alineación vertical */
 }
