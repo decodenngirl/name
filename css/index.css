@@ -5,6 +5,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 /* Sección Principal */
@@ -18,9 +19,9 @@ body {
 /* Artículos */
 .article-principal {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     gap: 20px; /* Espaciado entre elementos */
-    max-width: 1200px; /* Ancho máximo */
+    max-width: 100%; /* Ancho máximo */
     margin: auto; /* Centrado */
 }
 
@@ -34,13 +35,14 @@ figure {
     position: relative; /* Para posicionar el enlace "comprar" */
 }
 
+/* Efecto de hover en figura */
 figure:hover {
     transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
 }
 
 /* Imagen */
 figure img {
-    width: 100%;
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
     height: auto; /* Mantiene la proporción */
     border-bottom: 2px solid #f28e9d; /* Línea decorativa */
 }
@@ -87,4 +89,11 @@ footer a {
 footer img {
     width: 30px; /* Tamaño de los íconos */
     vertical-align: middle; /* Alineación vertical */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .article-principal {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
 }
