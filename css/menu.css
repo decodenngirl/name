@@ -11,13 +11,13 @@
 
 body {
     font-family: "Arial", sans-serif;
-    background-color: #f2f2f2;
+    background-color: #f9f2f4; /* Fondo claro */
     overflow-x: hidden;
 }
 
 /* Header */
 .header {
-    background-color: #b76e79;
+    background-color: #f28e9d; /* Rosa claro */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -29,15 +29,23 @@ body {
 }
 
 /* Título y Slogan */
-.header .titulo {
+.header .h1-clay {
     color: #fff;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
+.h1-clay{
+    font-family:"Rubik Puddles", serif;
+}
+
+.slogan{
+    font-family:"Jersey 15 Charted", sans-serif;
+}
+
 .header .slogan {
-    color: #f2e9e4;
+    color: #f7e0e4; /* Rosa muy claro */
     font-size: 14px;
     margin-bottom: 15px;
 }
@@ -49,7 +57,7 @@ body {
     display: flex;
     gap: 10px;
     padding: 10px 0;
-    background-color: #b76e79;
+    background-color: #f28e9d; /* Rosa claro */
     width: 100%;
     justify-content: center;
 }
@@ -82,7 +90,7 @@ body {
 
 /* Efecto de hover en los enlaces del menú */
 .nav > li > a:hover {
-    color: #f2f2f2;
+    color: #f9f2f4; /* Rosa muy claro */
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
 }
@@ -94,7 +102,7 @@ body {
     top: 100%;
     left: 0;
     display: none;
-    background-color: #22223b;
+    background-color: #f3b6c0; /* Rosa suave */
     padding: 10px 0;
     margin: 0;
     border-radius: 5px;
@@ -111,7 +119,7 @@ body {
 
 /* Estilo de enlaces del submenú */
 .nav > li ul li a {
-    color: #f2e9e4;
+    color: #f7e0e4; /* Rosa muy claro */
     text-decoration: none;
     padding: 8px 15px;
     display: block;
@@ -120,7 +128,7 @@ body {
 
 /* Hover en el submenú */
 .nav > li ul li a:hover {
-    background-color: #c9ada7;
+    background-color: #e8a6ab; /* Rosa medio */
     border-radius: 5px;
 }
 
@@ -139,7 +147,7 @@ body {
 
 .footer-item {
     text-align: center;
-    color: #b76e79;
+    color: #f28e9d; /* Rosa claro */
 }
 
 .footer-item i {
