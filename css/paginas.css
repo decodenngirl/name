@@ -1,137 +1,80 @@
-/*  Reseteo de márgenes y ajustes de caja 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-/* Contenedor principal 
+/* Contenedor principal */
 #div-contenedor {
-    border: 2px solid black;
-    height: 400px;
-    overflow: hidden;
-}
-
-/* Contenedor de cada elemento 
-.div-padre {
-    width: 100%;
-    height: 400px;
     position: relative;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid black;
 }
 
-/* Estilo de la primera sección 
-.div-1 {
-    background-color: rgba(251, 205, 238, 0.234);
-    height: 100%;
-}
-
-/* Estilo de la segunda sección 
-.div-2 {
-    /*background-color: rgb(10, 185, 179);
+/* Contenedor de cada elemento del carrusel */
+.div-padre {
     position: absolute;
     top: 0;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    padding: 20px;
-    height: 100%;
+    left: 0;
     width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
-/* Estilo de los puntos de navegación 
-.puntos {
-    display: inline-flex;
-    text-decoration: none;
-    padding-top: 20px;
+.div-padre.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Estilo de las tarjetas */
+.tarjeta {
+    width: 100%;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Contenedor de los puntos 
-.div_puntos {
-    position: relative;
-    width: 100%;
-    text-align: center; /* Centra los puntos horizontalmente 
-}
-
-/* Estilo de las imágenes 
-img {
-    width: 80%;
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    position: absolute;
-    top: 0;
-    left: 10%;
-}*/
-
-/* Contenedor principal */
-/* Contenedor principal */
-#div-contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-
-/* Estilo de las tarjetas */
-.div-padre {
-    background-color: #fff; /* Fondo blanco para un contraste limpio */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 15px 0;
-    overflow: hidden; /* Para evitar el desbordamiento de la imagen */
-    transition: transform 0.3s;
-}
-
-.div-padre:hover {
-    transform: scale(1.02); /* Efecto de aumento al pasar el ratón */
-}
-
-/* Imagen de la tarjeta */
-.div-1 {
-    width: 50%; /* Cambiado a 90% para un mejor ajuste */
-    margin: 0 auto; /* Centrado horizontalmente */
-}
-
 .tarjeta img {
-    width: 100%;
-    height: auto; /* Mantiene la proporción */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-/* Navegación */
+/* Navegación por flechas */
 .div-2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    background-color: #f3b6c0; /* Rosa suave */
+    padding: 0 20px;
+    transform: translateY(-50%);
 }
 
 .icono-nav {
-    color: #fff;
-    font-size: 24px; /* Tamaño de los íconos */
+    color: #000;
+    font-size: 24px;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .icono-nav:hover {
-    color: #f9f2f4; /* Rosa muy claro en hover */
+    color: #f28e9d;
 }
 
 /* Navegación por puntos */
 .div_puntos {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .puntos {
-    font-size: 24px; /* Tamaño de los puntos */
+    font-size: 24px;
     text-decoration: none;
-    color: #f28e9d; /* Rosa claro */
+    color: #000;
     margin: 0 5px;
     transition: transform 0.3s;
 }
 
 .puntos:hover {
-    transform: scale(1.5); /* Aumenta el tamaño al pasar el ratón */
+    transform: scale(1.5);
 }

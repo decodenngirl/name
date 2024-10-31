@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/paginas.css">
+    <link rel="stylesheet" href="css/carrusel.css">
 </head>
 
 <body>
@@ -23,11 +24,10 @@
                     <a href="nosotros.html">Nosotros</a>
                     <ul>
                         <li><a href=""></a></li>
-        
-                    </ul> 
-                </li> 
+                    </ul>
+                </li>
                 <li>
-                    <a href="portaretratos.html">Portaretratos</a> 
+                    <a href="portaretratos.html">Portaretratos</a>
                     <ul>
                         <li><a href="Merlina.html">Merlina</a></li>
                         <li><a href="chino.html">BTS</a></li>
@@ -45,54 +45,58 @@
     <!-- Contenido principal -->
     <div id="div-contenedor">
         <div class="div-padre" id="item-1">
-            <div class="div-1 tarjeta">
+            <div class="tarjeta">
                 <img src="fotos/NEW JEANS.png" alt="Descripción de la imagen 1">
             </div>
             <div class="div-2">
-                <a href="#item-1" class="icono-nav">
-                    <i class="fas fa-arrow-left"></i>
+                <a href="#item-3" class="icono-nav prev">
+                    <i class="fas fa-arrow-left">◀</i>
                 </a>
-                <a href="#item-2" class="icono-nav">
-                    <i class="fas fa-arrow-right"></i>
+                <a href="#item-2" class="icono-nav next">
+                    <i class="fas fa-arrow-right">▶</i>
                 </a>
             </div>
         </div>
-    
+
         <div class="div-padre" id="item-2">
-            <div class="div-1 tarjeta">
+            <div class="tarjeta">
                 <img src="fotos/NEW JEANS-2.png" alt="Descripción de la imagen 2">
             </div>
             <div class="div-2">
-                <a href="#item-1" class="icono-nav">
-                    <i class="fas fa-arrow-left"></i>
+                <a href="#item-1" class="icono-nav prev">
+                    <i class="fas fa-arrow-left">◀</i>
                 </a>
-                <a href="#item-3" class="icono-nav">
-                    <i class="fas fa-arrow-right"></i>
+                <a href="#item-3" class="icono-nav next">
+                    <i class="fas fa-arrow-right">▶</i>
                 </a>
             </div>
         </div>
-    
+
         <div class="div-padre" id="item-3">
-            <div class="div-1 tarjeta">
+            <div class="tarjeta">
                 <img src="fotos/NEW JEANS-3.png" alt="Descripción de la imagen 3">
             </div>
             <div class="div-2">
-                <a href="#item-2" class="icono-nav">
-                    <i class="fas fa-arrow-left"></i>
+                <a href="#item-2" class="icono-nav prev">
+                    <i class="fas fa-arrow-left">◀</i>
                 </a>
-                <a href="#item-3" class="icono-nav">
-                    <i class="fas fa-arrow-right"></i>
+                <a href="#item-1" class="icono-nav next">
+                    <i class="fas fa-arrow-right">▶</i>
                 </a>
             </div>
         </div>
     </div>
-    
+
     <!-- Navegación por puntos -->
     <div class="div_puntos">
-        <a href="#item-1" class="puntos"><i>*</i></a>
-        <a href="#item-2" class="puntos"><i>*</i></a>
-        <a href="#item-3" class="puntos"><i>*</i></a>
+        <a href="#item-1" class="puntos">*</a>
+        <a href="#item-2" class="puntos">*</a>
+        <a href="#item-3" class="puntos">*</a>
     </div>
-    
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Script para el carrusel -->
+    <script src="javascript/carrusel.js"></script>
 </body>
 </html>
