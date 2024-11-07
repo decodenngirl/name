@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    position: static;
+    position: sta;
     top: 0;
     z-index: 1000;
 }
@@ -31,22 +31,24 @@ body {
 /* Título y Slogan */
 .header .h1-clay {
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .h1-clay{
     font-family:"Rubik Puddles", serif;
+    word-spacing: 15px;
 }
 
 .slogan{
-    font-family:"Jersey 15 Charted", sans-serif;
+    /*font-family:"Jersey 15 Charted", sans-serif;*/
+    
 }
 
 .header .slogan {
     color: #f7e0e4; /* Rosa muy claro */
-    font-size: 14px;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 
