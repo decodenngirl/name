@@ -21,7 +21,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Dos columnas */
     gap: 50px; /* Espaciado entre elementos */
-    max-width: 80%; /* Ancho máximo */
+    max-width: 100%; /* Ancho máximo */
     margin: auto; /* Centrado */
 }
 

@@ -1,11 +1,15 @@
 /* Contenedor principal */
 #div-contenedor {
     position: relative;
-    max-width: 800px;
+    max-width: 1000px;
     height: 400px;
     margin: 0 auto;
     overflow: hidden;
-    border: 2px solid black;
+    border: 5px solid lightpink;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
 }
 
 /* Contenedor de cada elemento del carrusel */
@@ -17,6 +21,7 @@
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    
 }
 
 .div-padre.active {
@@ -28,15 +33,19 @@
 .tarjeta {
     width: 100%;
     height: 100%;
+    background-color: rgba(255, 182, 193, 0.16);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .tarjeta img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
     object-fit: contain;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
 }
 
 /* Navegación por flechas */
@@ -51,7 +60,7 @@
 }
 
 .icono-nav {
-    color: #000;
+    color: #f28e9d;
     font-size: 24px;
     text-decoration: none;
     transition: color 0.3s;
@@ -68,13 +77,64 @@
 }
 
 .puntos {
-    font-size: 24px;
+    font-size: 50px;
     text-decoration: none;
-    color: #000;
+    color: lightpink;
     margin: 0 5px;
     transition: transform 0.3s;
 }
 
 .puntos:hover {
     transform: scale(1.5);
+}
+
+/* a partir de aqui estilos de las tragetas de descripción*/
+.descripcion-contenedor{
+    display:flex;
+    justify-content: space-around;
+}
+
+.descripcion-contenedor article{
+    flex: 1 200px;
+    border: 5px solid lightpink;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    flex-flow: column;
+}
+
+.descripcion-contenedor article div div{
+    height: 25px;
+    background-color:  #f28e9d;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.descripcion-contenedor article div div h5{
+    /*text-align: center;*/
+    color: white;
+
+}
+
+.descripcion-contenedor article div,p{
+    margin-top:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-titulo{
+    display: flex;
+    justify-content: center;
+    border: 3px solid #f28e9d;
+    border-radius: 5px;
+    margin-top: 10px;
+   
+}
+
+.titulo{
+    
 }
