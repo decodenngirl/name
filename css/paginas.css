@@ -93,7 +93,8 @@
 .descripcion-contenedor{
     display:flex;
     justify-content: space-around;
-    font-family: "Itim", cursive;;
+    font-family: "Itim", cursive;
+    flex-wrap: wrap;
 }
 
 .descripcion-contenedor article{
@@ -139,6 +140,7 @@ border-radius
 border-bottom: none;
 margin-top: 20px;
 background-color: #f28e9d;
+flex-wrap: wrap;
 /*flex-direction:column es el que permite convertir tanto al elemento hijo como al padre contenedores flex*/
 }
 
