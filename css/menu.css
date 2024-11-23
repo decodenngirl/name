@@ -20,39 +20,43 @@ body {
 .header {
     background-color: #f28e9d; /* Rosa claro */
     padding: 20px;
-    display: grid;
-    grid-template-rows: auto auto; /* Dos filas automáticas */
-    grid-template-columns: 0.2fr 1fr; /* Dos columnas de igual tamaño */
-   /*align-items: center;*/ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     position: static;
-    /*flex-wrap: column wrap;*/
+    flex-wrap: column wrap;
     top: 0;
     z-index: 1000;
 }
 
+/* Título y Slogan */
+.header .h1-clay {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 
 .h1-clay{
-    font-size: 68px;
     font-family: "Sour Gummy", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
-    color: white;
     font-variation-settings:
       "wdth" 100;
-    word-spacing: 5px;
-
+    word-spacing: 15px;
 }
 
 .logo{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 10%;
+}
+.slogan{
+    /*font-family:"Jersey 15 Charted", sans-serif;*/
+    
 }
 
-
-.slogan {
+.header .slogan {
     color: #f7e0e4; /* Rosa muy claro */
     font-size: 20px;
     margin-bottom: 15px;
@@ -70,7 +74,7 @@ body {
     justify-content: center;
 }
 
-.listas::-webkit-scrollbar {
+.menu-container::-webkit-scrollbar {
     display: none; /* Oculta la barra de desplazamiento */
 }
 
@@ -84,10 +88,6 @@ body {
 .nav > li {
     display: inline-block;
     position: relative;
-    border:2px solid #fff;
-    border-radius: 1px;
-    padding-left: 15px;
-    padding-right: 10px;
 }
 
 .nav > li > a {
@@ -97,7 +97,7 @@ body {
     padding: 8px 10px;
     display: inline-block;
     transition: color 0.3s;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* Efecto de hover en los enlaces del menú */
