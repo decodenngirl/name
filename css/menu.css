@@ -29,11 +29,22 @@ body {
     top: 0;
     z-index: 1000;
 }
+.contenedor-logotitulo{
+    display: flex;
+    flex-wrap:column-reverse wrap;
+    background-color: #f28e9d;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+.titulo-contenedor{
+    flex: 8;
+}
 /* Título y Slogan */
 .h1-clay {
     color: #fff;
-    font-size:5em;
+    font-size:48px;
     font-weight: bold;
     margin-bottom: 5px;
     margin-left: 50px;
@@ -45,18 +56,6 @@ body {
     font-variation-settings:
       "wdth" 100;
     word-spacing: 15px;
-}
-
-.contenedor-logotitulo{
-    display: flex;
-    flex-wrap:column-reverse wrap;
-    background-color: #f28e9d;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.titulo-contenedor{
-    flex: 8;
 }
 .logo-contenedor{
     flex: 2;
