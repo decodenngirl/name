@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Puddles&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* General: Adaptabilidad */
 * {
@@ -19,42 +20,47 @@ body {
 .header {
     background-color: #f28e9d; /* Rosa claro */
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: auto auto; /* Dos filas automáticas */
+    grid-template-columns: 0.2fr 1fr; /* Dos columnas de igual tamaño */
+   /*align-items: center;*/ 
     text-align: center;
     position: static;
+    /*flex-wrap: column wrap;*/
     top: 0;
     z-index: 1000;
 }
 
-/* Título y Slogan */
-.header .h1-clay {
-    color: #fff;
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
 
 .h1-clay{
-    font-family:"Rubik Puddles", serif;
-    word-spacing: 15px;
+    font-size: 68px;
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    color: white;
+    font-variation-settings:
+      "wdth" 100;
+    word-spacing: 5px;
+
 }
 
-.slogan{
-    /*font-family:"Jersey 15 Charted", sans-serif;*/
-    
+.logo{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
-.header .slogan {
+
+.slogan {
     color: #f7e0e4; /* Rosa muy claro */
     font-size: 20px;
     margin-bottom: 15px;
 }
 
 /* Menú principal deslizable */
-.menu-container {
-    overflow-x: auto;
+.listas {
+    /*overflow-x: auto;*/
     white-space: nowrap;
     display: flex;
     gap: 10px;
@@ -64,7 +70,7 @@ body {
     justify-content: center;
 }
 
-.menu-container::-webkit-scrollbar {
+.listas::-webkit-scrollbar {
     display: none; /* Oculta la barra de desplazamiento */
 }
 
@@ -78,6 +84,10 @@ body {
 .nav > li {
     display: inline-block;
     position: relative;
+    border:2px solid #fff;
+    border-radius: 1px;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 .nav > li > a {
@@ -87,7 +97,7 @@ body {
     padding: 8px 10px;
     display: inline-block;
     transition: color 0.3s;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 /* Efecto de hover en los enlaces del menú */
