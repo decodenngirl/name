@@ -31,7 +31,7 @@ body {
 }
 .contenedor-logotitulo{
     display: flex;
-    flex-wrap:column-reverse wrap;
+    flex-wrap:wrap;
     background-color: #f28e9d;
     align-items: center;
     justify-content: center;
