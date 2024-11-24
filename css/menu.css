@@ -157,13 +157,13 @@ body {
 
 @media (max-width:530px){
     .logo{
-        width: 100px;
+        width: 60%;
     }
-    .h1-clay{width:90%}
+    .h1-clay{width:70%}
 
     .contenedor-logotitulo {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
         flex-wrap: wrap;
