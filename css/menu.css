@@ -33,7 +33,7 @@ body {
     flex: 1;
 }
 .titulo-contenedor{
-    flex: 3;
+    flex: 4;
     display: flex;
     flex-wrap: wrap;
 }
@@ -56,6 +56,14 @@ body {
 .header {
     background-color: #f28e9d;
     padding: 10px 0;
+}
+.bienvenida{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f28e9d;
+    border: 1px solid black;
+    color: #fff;
 }
 
 .listas {
@@ -90,7 +98,7 @@ body {
 .nav > li > a {
     color: #fff;
     text-decoration: none;
-    width: 100%;
+    width: 90%;
     padding: 10px;
     display: block;
     transition: background 0.3s;
@@ -133,7 +141,7 @@ body {
 
 @media (max-width: 768px) {
     .h1-clay {
-        font-size: 100%;
+        font-size: 30px;
         margin-left: 15px;
         margin-right: 15px;
     }
@@ -142,18 +150,18 @@ body {
     }
     .nav > li {
         max-width: none;
-        width: 20%;
+        width: 15%;
     }
     .nav > li ul {
         position: static;
         box-shadow: none;
     }
     .nav > li ul li a {
-        font-size: 50%;
+        font-size: 100%;
         padding: 10px;
     }
     .logo {
-        width: 70%;
+        width: 100%;
         height: auto;
     }
     .contenedor-logotitulo {
